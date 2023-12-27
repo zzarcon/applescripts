@@ -1,0 +1,76 @@
+var app = Application.currentApplication()
+app.includeStandardAdditions = true
+var things = Application("Things3")
+
+var areas = things.areas()
+var projects = things.projects()
+var todos = things.toDos()
+var todosLength = todos.length
+console.log('total todos:', todosLength)
+
+// var todo = todos[todosLength - 1]
+// console.log(todo.name())
+
+var newTodo = things.ToDo({
+  name: 'xxx', 
+  // status: 'open', 
+  // creationDate: new Date(), 
+  // dueDate: new Date(), 
+  // note: 'xxx', 
+  // tagNames: ['xxx'], 
+  project: projects[0], 
+  // area: areas[0], 
+  // parentTask: null, 
+  // tags: []
+})
+
+newTodo.make()
+
+// debugger
+// todos.push(newTodo)
+
+// newTodo.make()
+// , todo.status(), todo.creationDate(), todo.dueDate(), todo.note(), todo.tagNames(), todo.project(), todo.area(), todo.parentTask(), todo.tags(), todo.project()
+
+
+// todos.push({name: 'xxx', status: 'open', creationDate: new Date(), dueDate: new Date(), note: 'xxx', tagNames: ['xxx'], project: projects[0], area: areas[0], parentTask: null, tags: []})
+// todos[todosLength] = todo
+
+// things.toDos().make({new: 'to do'}).withProperties({name: 'xxx'})
+// console.log(projects.length)
+// things.make({
+//   new: 'to do', 
+//   // withProperties: {
+//     name: 'xxx', 
+//     // dueDate: new Date()
+//     // tagNames: ['xxx'], project: projects[0], area: areas[0], parentTask: null, tags: []
+//   // }
+// })
+// debugger
+// things.make({new: 'to do'}).withProperties({name: 'xxx', status: 'open', creationDate: new Date(), dueDate: new Date(), note: 'xxx'})
+// for (var i = 0; i < projects.length; i++) {
+//   var element = projects[i]
+//   // debugger
+//   // console.log(element.name())
+// }
+// for (var i = 0; i < things.toDos.length; i++) {
+//   var element = things.toDos[i]
+//   console.log(element.name())
+// }
+
+
+// things.make({new: 'to do'})
+
+// things.toDos.forEach(element => {
+//   console.log(element.name())
+// });
+// for (let todo of things.toDos) {
+//   // var name = todo.name()
+//   console.log('1')
+// }
+// things.toDos.array.forEach(element => {
+//   console.log(element)  
+// });
+// debugger
+// console.log(count)
+// debugger
